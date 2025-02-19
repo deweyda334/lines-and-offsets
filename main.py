@@ -37,10 +37,10 @@ def main():
             pygame.draw.line(screen, config.RED, [0, 10 + y_offset], [100, 110 + y_offset], thickness)
 
        
-            pygame.display.flip()
+        pygame.display.flip()
 
-            # Limit the frame rate to the specified frames per second (FPS) 
-            clock.tick(config.FPS)
+        # Limit the frame rate to the specified frames per second (FPS) 
+        clock.tick(config.FPS)
 
     
     pygame.quit()
