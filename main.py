@@ -39,8 +39,8 @@ def main():
        
             pygame.display.flip()
 
-        # Limit the frame rate to the specified frames per second (FPS) 
-        clock.tick(config.FPS)
+            # Limit the frame rate to the specified frames per second (FPS) 
+            clock.tick(config.FPS)
 
     
     pygame.quit()
