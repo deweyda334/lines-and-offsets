@@ -30,20 +30,14 @@ def main():
 
         # Add the new code below this comment
 
+        # Draw on the screen multiple lines starting from (0, 10) to (100, 110)
+        # Each line will have a width of 5 pixels
+        thickness = 5
+        for y_offset in range(0, 100, 10):
+            pygame.draw.line(screen, config.RED, [0, 10 + y_offset], [100, 110 + y_offset], thickness)
 
-
-
-
-
-
-
-
-
-
-
-
-
-        pygame.display.flip()
+       
+            pygame.display.flip()
 
         # Limit the frame rate to the specified frames per second (FPS) 
         clock.tick(config.FPS)
